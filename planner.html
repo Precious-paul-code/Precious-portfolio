@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive academic task planner.">
+  <meta name="theme-color" content="#ff4fa3">
+  <title>Academic Planner | Precious Paul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">P</span> Precious Paul</a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html" aria-current="page">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Academic planner</span>
+        <h1>Plan your study life</h1>
+        <p class="lead">Add tasks, tick them off when done, and delete what you no longer need. Your tasks are saved in this browser.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container planner-grid">
+        <form id="task-form" class="card planner-form" novalidate>
+          <h2 style="font-size:1.3rem">Add a task</h2>
+          <div class="field">
+            <label for="task-title">Task</label>
+            <input type="text" id="task-title" placeholder="e.g. Revise Python functions" maxlength="120">
+            <p class="error" id="task-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="task-course">Course / subject</label>
+            <input type="text" id="task-course" placeholder="e.g. COS 106" maxlength="40">
+          </div>
+          <div class="field">
+            <label for="task-due">Due date</label>
+            <input type="date" id="task-due">
+          </div>
+          <div class="field">
+            <label for="task-priority">Priority</label>
+            <select id="task-priority">
+              <option value="low">Low</option>
+              <option value="medium" selected>Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">＋ Add task</button>
+        </form>
+
+        <section aria-label="Your tasks">
+          <div class="progress">
+            <div class="progress-head"><strong>Progress</strong><span id="progress-count">0 of 0 completed</span></div>
+            <div class="bar"><i id="progress-bar" style="width:0"></i></div>
+          </div>
+          <div class="planner-top">
+            <div class="filters" role="group" aria-label="Filter tasks">
+              <button type="button" data-filter="all" class="active">All</button>
+              <button type="button" data-filter="active">Active</button>
+              <button type="button" data-filter="done">Completed</button>
+            </div>
+            <button type="button" id="clear-done" class="btn btn-ghost btn-sm">Clear completed</button>
+          </div>
+          <ul id="task-list" class="task-list"></ul>
+          <p id="empty" class="empty" hidden>🎉 Nothing here yet. Add a task to get started!</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Okorie Precious Paul</h3>
+          <p>BSc Computer Science student and aspiring Cybersecurity Analyst, building skills one project at a time.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="mailto:p.paul6922@miva.edu.ng">p.paul6922@miva.edu.ng</a></li>
+            <li><a href="tel:+2347047231614">07047231614</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© <span data-year>2026</span> Okorie Precious Paul. Built for COS 106 – Introduction to Web Technologies, MIVA Open University.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

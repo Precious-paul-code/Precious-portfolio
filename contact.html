@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Precious Paul.">
+  <meta name="theme-color" content="#ff4fa3">
+  <title>Contact | Precious Paul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">P</span> Precious Paul</a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>Let's talk</h1>
+        <p class="lead">Questions, collaborations or just a hello, send me a message.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <aside class="card reveal" aria-label="Contact details">
+          <h2 style="font-size:1.4rem">Contact details</h2>
+          <ul class="contact-list">
+            <li><span class="icon-box">✉️</span><div><small>Email</small><a href="mailto:p.paul6922@miva.edu.ng">p.paul6922@miva.edu.ng</a></div></li>
+            <li><span class="icon-box">📞</span><div><small>Phone</small><a href="tel:+2347047231614">07047231614</a></div></li>
+            <li><span class="icon-box">🎓</span><div><small>Institution</small>MIVA Open University</div></li>
+          </ul>
+        </aside>
+
+        <form id="contact-form" class="card reveal" novalidate>
+          <h2 style="font-size:1.4rem">Send a message</h2>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your full name">
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="e.g. 08012345678">
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can I help?"></textarea>
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <button class="btn btn-primary" type="submit">Send message →</button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Okorie Precious Paul</h3>
+          <p>BSc Computer Science student and aspiring Cybersecurity Analyst, building skills one project at a time.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h3>Get in touch</h3>
+          <ul>
+            <li><a href="mailto:p.paul6922@miva.edu.ng">p.paul6922@miva.edu.ng</a></li>
+            <li><a href="tel:+2347047231614">07047231614</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© <span data-year>2026</span> Okorie Precious Paul. Built for COS 106 – Introduction to Web Technologies, MIVA Open University.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
