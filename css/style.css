@@ -307,3 +307,6 @@ textarea { min-height: 150px; resize: vertical; }
   .reveal { opacity: 1; transform: none; }
 }
 a.card { color: var(--ink); } a.card h3 { color: var(--sea); } a.card p { color: var(--muted); }
+.ico { width: 1.15em; height: 1.15em; vertical-align: -.2em; margin-right: .4rem; color: var(--sea); flex: none; }
+.chips li:hover .ico { color: var(--on-pink); }
+.badge .ico { margin: 0; }
